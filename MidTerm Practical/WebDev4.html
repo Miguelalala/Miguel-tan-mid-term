@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun OF The Day</title>
+    <link rel="stylesheet" href="ol1.html">
+    <style>
+        body {
+            font-family: stencil;
+            line-height: 1.6;
+            background-image : url("pixel.jpg");
+            color: white;
+            padding: 20px;
+            display: flex;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        /* Navigation bar */
+	.sidebar {
+		width: 200px;
+		background: darkred;
+		color: black; /* Adjusted text color for better visibility */
+		padding: 20px;
+		position: fixed;
+		height: 100%;
+		left: 0;
+		top: 0;
+		overflow-y: auto;
+		border-right: 2px solid #ccc; /* Optional: adds a subtle border */
+	}
+
+	.sidebar h2 {
+		text-align: center;
+		margin-bottom: 20px;
+		color: black; /* Ensure text is visible */
+	}
+
+	.sidebar ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.sidebar ul li {
+		margin: 15px 0;
+	}
+
+	.sidebar ul li a {
+		position: relative;
+		color: black; /* Keep text readable */
+		text-decoration: none;
+		font-size: 18px;
+		display: block;
+		padding: 10px;
+		transition: background 0.3s, color 0.3s;
+	}
+
+	.sidebar ul li a:hover {
+		background: gray;
+		border-radius: 5px;
+	}
+
+        /* Main content */
+        .content {
+            margin-left: 220px;
+            flex: 1;
+        }
+
+        /* List styling */
+        ul, ol {
+            border-radius: 12px;
+            padding: 15px;
+            list-style-type: none;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            border: 2px solid #1E90FF;
+            background: linear-gradient(to bottom right, blue, darkred);
+        }
+        ol {
+            border: 2px solid #32CD32;
+            background: linear-gradient(to bottom right, blue, darkred);
+        }
+        li {
+            background-color: #ffffff;
+
+            margin: 12px 0;
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        ul li i {
+            color: blue; 
+            margin-right: 10px;
+        }
+        ul li a {
+            color: blue; 
+            text-decoration: none;
+            font-weight: bold;
+        }
+        ol li::before {
+            color: blue; 
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        ol li a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        li:hover {
+            transform: scale(1.05);
+			background: beige;
+			border-radius: 5px;
+        }
+
+        iframe {
+            border: 2px solid #888;
+            border-radius: 12px;
+            width: 100%;
+            height: 100vh;
+            margin-top: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+	<h2>Military Items</h2>
+        <ul>
+            <li><a href="Gun.html">Gun</a></li>
+            <li><a href="Grenade.html">Grenade</a></li>
+            <li><a href="Ammo.html">Ammo</a></li>
+            <li><a href="Suit.html">Suit</a></li>
+        </ul>
+    </div>
+	
+	 <div class="content">
+        <h1>Choose a Gun</h1>
+        <div style="display: flex;">
+            <div style="flex: 1; padding-left: 20px;">
+                <ul>
+                    <li><a href="">Rifle</a></li>
+                    <li><a href="">Pistol</a></li>
+                    <li><a href="">Sniper</a></li>
+                </ul>
+                <ol>
+                    <li><a href="">Machine Gun</a></li>
+                    <li><a href="">Mortar</a></li>
+                    <li><a href="">Other</a></li>
+                </ol>
+            </div>
+        </div>
+		<h1>Choose a Grenade</h1>
+		<ul>
+                    <li><a href="">Flash</a></li>
+                    <li><a href="">chemical</a></li>
+                    <li><a href="">Cluster</a></li>
+                </ul>
+                <ol>
+                    <li><a href="">Stun</a></li>
+                    <li><a href="">Smoke</a></li>
+                    <li><a href="">Other</a></li>
+                </ol>
+		<h1>Choose a Ammo</h1>
+		<ul>
+                    <li><a href="">Hollow Point</a></li>
+                    <li><a href="">Soft Point</a></li>
+                    <li><a href="">Full Metal Jacket</a></li>
+                </ul>
+                <ol>
+                    <li><a href="">Boat Tail</a></li>
+                    <li><a href="">Ballistic Tip</a></li>
+                    <li><a href="">Other</a></li>
+                </ol>
+		<h1>Choose a Suit</h1>
+		<ul>
+                    <li><a href="">Ghillie</a></li>
+                    <li><a href="">Fatigue</a></li>
+                    <li><a href="">Tropical</a></li>
+                </ul>
+                <ol>
+                    <li><a href="">Naval</a></li>
+                    <li><a href="">Air Force</a></li>
+                    <li><a href="">Other</a></li>
+                </ol>
+    </div>
+	
+	
+</body>
+</html>
